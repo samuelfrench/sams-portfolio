@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam French | Software Engineering Leader</title>
+    <meta name="description" content="Portfolio of Sam French - Software Engineering Leader with expertise in full-stack development, team management, and building innovative applications.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">SF</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Sam French</h1>
+                <h2 class="hero-title">Software Engineering Leader</h2>
+                <p class="hero-description">
+                    Building innovative applications and leading high-performing engineering teams.
+                    5+ years of engineering management experience combined with deep technical expertise
+                    in full-stack development, event-driven systems, and modern web technologies.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre><code><span class="keyword">const</span> <span class="variable">sam</span> = {
+  <span class="property">role</span>: <span class="string">"Engineering Leader"</span>,
+  <span class="property">experience</span>: {
+    <span class="property">management</span>: <span class="string">"5+ years"</span>,
+    <span class="property">development</span>: <span class="string">"6+ years"</span>
+  },
+  <span class="property">passion</span>: <span class="string">"Building impactful products"</span>,
+  <span class="property">approach</span>: <span class="string">"Ship fast, iterate often"</span>
+};</code></pre>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a software engineering leader who combines hands-on technical expertise with
+                        proven team leadership. I thrive at the intersection of technology and business,
+                        building products that make a real impact.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <span class="highlight-number">5+</span>
+                            <span class="highlight-label">Years Leading<br>Engineering Teams</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-number">6+</span>
+                            <span class="highlight-label">Years Full-Stack<br>Development</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-number">10+</span>
+                            <span class="highlight-label">Production<br>Applications</span>
+                        </div>
+                    </div>
+                    <p>
+                        My expertise spans from architecting event-driven systems to building engaging
+                        user experiences. I'm passionate about creating software that delights users
+                        and solving complex technical challenges with elegant solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">A selection of applications I've built recently</p>
+
+            <div class="projects-grid">
+                <!-- Coffee Explorer -->
+                <article class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-icon">&#9749;</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <h3 class="project-title">Coffee Explorer</h3>
+                        <p class="project-description">
+                            Full-stack coffee discovery platform with product recommendations, 30+ SEO-optimized
+                            articles, and Amazon affiliate integration. Features a responsive React frontend
+                            with a robust Spring Boot backend.
+                        </p>
+                        <ul class="project-features">
+                            <li>AI-powered coffee recommendations</li>
+                            <li>30 comprehensive blog articles with SEO optimization</li>
+                            <li>Amazon affiliate product integration</li>
+                            <li>Deployed on Fly.io with custom domain</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://mycoffeeexplorer.com" class="project-link" target="_blank">Live Site</a>
+                            <a href="https://github.com/samuelfrench" class="project-link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Freddy's Game -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">&#127918;</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Three.js</span>
+                            <span class="tag">WebGL</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Vite</span>
+                        </div>
+                        <h3 class="project-title">3D Ninja Castle</h3>
+                        <p class="project-description">
+                            Advanced 3D browser game featuring AI behavior trees, wave-based combat,
+                            and stunning post-processing effects. First-person melee combat with combo
+                            system and special abilities.
+                        </p>
+                        <ul class="project-features">
+                            <li>4 enemy types with AI behavior trees</li>
+                            <li>Post-processing: bloom, vignette, chromatic aberration</li>
+                            <li>GPU particle system and procedural audio</li>
+                            <li>164 comprehensive tests with Vitest</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/samuelfrench/freddys-game" class="project-link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Castle Quest -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">&#127984;</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">HTML5 Canvas</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Game Dev</span>
+                        </div>
+                        <h3 class="project-title">Castle Quest</h3>
+                        <p class="project-description">
+                            Kid-friendly platformer game designed for ages 5+. Features smooth physics,
+                            a medieval castle theme, and forgiving gameplay mechanics perfect for young players.
+                        </p>
+                        <ul class="project-features">
+                            <li>80 platforms with progressive difficulty</li>
+                            <li>Child-friendly with 5 lives and no enemies</li>
+                            <li>Smooth camera follow with lerp interpolation</li>
+                            <li>Full Playwright E2E test suite</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/samuelfrench" class="project-link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- History Kids -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">&#128218;</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Vite</span>
+                            <span class="tag">Education</span>
+                        </div>
+                        <h3 class="project-title">History Kids</h3>
+                        <p class="project-description">
+                            Educational web app for young children featuring interactive stories about
+                            Jesus and American history with colorful UI and engaging page-by-page navigation.
+                        </p>
+                        <ul class="project-features">
+                            <li>Age-appropriate content for 5-year-olds</li>
+                            <li>Emoji-based illustrations</li>
+                            <li>Celebration effects on story completion</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/samuelfrench/history-kids" class="project-link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Kids Engineering -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">&#129302;</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <h3 class="project-title">Kids Engineering</h3>
+                        <p class="project-description">
+                            Interactive STEM education app teaching computer engineering concepts to
+                            4-6 year olds through Build-a-Robot, Circuit Builder, and Coding Game activities.
+                        </p>
+                        <ul class="project-features">
+                            <li>Three interactive learning modules</li>
+                            <li>Web Audio API for engaging sounds</li>
+                            <li>Mobile and touch-friendly design</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/samuelfrench" class="project-link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Arena Brawl -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">&#9876;</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">HTML5 Canvas</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">AI</span>
+                        </div>
+                        <h3 class="project-title">Arena Brawl</h3>
+                        <p class="project-description">
+                            2D local multiplayer battle game with projectile combat, dash abilities,
+                            and particle effects. Features an intelligent AI opponent with strategic behaviors.
+                        </p>
+                        <ul class="project-features">
+                            <li>Local multiplayer or vs AI</li>
+                            <li>AI with projectile dodging and target prediction</li>
+                            <li>Single HTML file for easy distribution</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/samuelfrench" class="project-link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience & Achievements</h2>
+            <p class="section-subtitle">Professional highlights and performance</p>
+
+            <div class="experience-content">
+                <!-- Instructions for adding work history -->
+                <div class="experience-instructions">
+                    <h3>Adding Your Professional Experience</h3>
+                    <p>To complete this section, add your work history below. Include:</p>
+                    <ul>
+                        <li><strong>Role titles and companies</strong> - Your positions and where you worked</li>
+                        <li><strong>Key accomplishments</strong> - Quantified achievements (e.g., "Led team of 8 engineers")</li>
+                        <li><strong>Impact metrics</strong> - Performance results and business outcomes</li>
+                        <li><strong>Performance review highlights</strong> - Notable feedback and ratings</li>
+                    </ul>
+                </div>
+
+                <div class="timeline">
+                    <!-- Example Entry - Replace with actual experience -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Current Position</span>
+                            <h3 class="timeline-title">Senior Engineering Manager</h3>
+                            <p class="timeline-company"><!-- Add company name --></p>
+                            <ul class="timeline-achievements">
+                                <li>Leading engineering teams in delivering high-impact products</li>
+                                <li>5+ years of engineering management experience</li>
+                                <li>Track record of building and scaling engineering organizations</li>
+                                <!-- ADD YOUR SPECIFIC ACHIEVEMENTS HERE -->
+                            </ul>
+                            <div class="performance-highlight">
+                                <h4>Performance Highlights</h4>
+                                <p><!-- Add performance review excerpts, ratings, or notable feedback here --></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Previous Role</span>
+                            <h3 class="timeline-title">Software Engineer</h3>
+                            <p class="timeline-company"><!-- Add company name --></p>
+                            <ul class="timeline-achievements">
+                                <li>3+ years developing event-driven systems and listeners</li>
+                                <li>Full-stack development with modern web technologies</li>
+                                <!-- ADD YOUR SPECIFIC ACHIEVEMENTS HERE -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Performance Review Template -->
+                <div class="review-template">
+                    <h3>How to Add Performance Reviews</h3>
+                    <p>For each role, consider adding:</p>
+                    <div class="review-example">
+                        <div class="review-category">
+                            <strong>Leadership & Impact:</strong>
+                            <p>"Consistently demonstrates strong leadership..." or rating scores</p>
+                        </div>
+                        <div class="review-category">
+                            <strong>Technical Excellence:</strong>
+                            <p>"Architected solutions that improved..." with metrics</p>
+                        </div>
+                        <div class="review-category">
+                            <strong>Collaboration:</strong>
+                            <p>"Praised for cross-team collaboration on..."</p>
+                        </div>
+                        <div class="review-category">
+                            <strong>Key Quote:</strong>
+                            <p>"Direct quote from manager or peer review..."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Three.js</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Infrastructure & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Fly.io</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Route 53</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Architecture & Patterns</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Event-Driven Systems</span>
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">System Design</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Leadership</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Team Building</span>
+                        <span class="skill-tag">Agile/Scrum</span>
+                        <span class="skill-tag">Technical Strategy</span>
+                        <span class="skill-tag">Mentorship</span>
+                        <span class="skill-tag">Hiring</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">Interested in working together or have a question?</p>
+
+            <div class="contact-content">
+                <div class="contact-links">
+                    <a href="mailto:samfrench@gmail.com" class="contact-link">
+                        <span class="contact-icon">&#9993;</span>
+                        <span>samfrench@gmail.com</span>
+                    </a>
+                    <a href="https://github.com/samuelfrench" class="contact-link" target="_blank">
+                        <span class="contact-icon">&#128187;</span>
+                        <span>github.com/samuelfrench</span>
+                    </a>
+                    <a href="https://linkedin.com/in/" class="contact-link" target="_blank">
+                        <span class="contact-icon">&#128101;</span>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Sam French. Built with passion and code.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
