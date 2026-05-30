@@ -5,18 +5,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
 
-    if (navToggle) {
+    if (navToggle && navLinks) {
         navToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            navToggle.classList.toggle('active');
+            const isOpen = navLinks.classList.toggle('active');
+            navToggle.classList.toggle('active', isOpen);
+            navToggle.setAttribute('aria-expanded', String(isOpen));
         });
     }
 
     // Close mobile nav when clicking a link
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
+            if (!navLinks || !navToggle) return;
             navLinks.classList.remove('active');
             navToggle.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
         });
     });
 
@@ -24,9 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const selector = this.getAttribute('href');
+            if (!selector || selector === '#') return;
+
+            const target = document.querySelector(selector);
             if (target) {
-                const navHeight = document.querySelector('.navbar').offsetHeight;
+                const navHeight = document.querySelector('.navbar')?.offsetHeight || 0;
                 const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
                 window.scrollTo({
                     top: targetPosition,
@@ -38,19 +44,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Navbar background on scroll
     const navbar = document.querySelector('.navbar');
-    let lastScroll = 0;
-
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
 
         // Add shadow when scrolled
+        if (!navbar) return;
+
         if (currentScroll > 50) {
             navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
         } else {
             navbar.style.boxShadow = 'none';
         }
-
-        lastScroll = currentScroll;
     });
 
     // Animate elements on scroll (Intersection Observer)
@@ -115,7 +119,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Console easter egg
-    console.log('%c Welcome to Sam\'s Portfolio!', 'color: #6366f1; font-size: 24px; font-weight: bold;');
-    console.log('%c Built with vanilla HTML, CSS, and JavaScript', 'color: #10b981; font-size: 14px;');
 });
