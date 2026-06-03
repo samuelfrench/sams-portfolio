@@ -10,4 +10,5 @@
 - [ ] Restore a PDF Merge public URL before adding a live link again; `mergepdfnow.com` did not resolve and the Fly app was suspended on 2026-05-30.
 
 ## Completed
+- [x] 2026-06-02: Added RV Appliance Code Atlas to featured projects after permanent-domain launch, GA4/GSC automation, and FreshJet closeout verification.
 - [x] 2026-05-30: Refreshed hero/about copy, updated major project stats, added TowerStrike, replaced unfinished experience placeholders, tightened styling, and hardened links/mobile nav basics.
